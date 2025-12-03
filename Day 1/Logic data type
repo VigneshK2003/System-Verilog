@@ -1,3 +1,5 @@
+//Logic data type
+
 module data_type;
   logic[7:0]a;
   logic[7:0]b;
