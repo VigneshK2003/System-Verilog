@@ -1,0 +1,12 @@
+module shift_operator;
+  int a;
+  int b;
+  
+  initial begin
+     a = 10;
+    
+    $display(" a >> 1 = %0d", a >> 1);
+    $display(" a << 1 = %0d", a << 1);
+    $display(" a >>> 1 = %0d", a >>> 1);
+  end
+endmodule
