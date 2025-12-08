@@ -1,0 +1,15 @@
+module bitwise_operator;
+
+  int a;
+  int b;
+  
+  initial begin
+     a = 10;
+     b = 8;
+    $display("AND of a,b = %0d", a&b);
+    $display("OR of a,b = %0d", a|b);
+    $display("XOR of a,b = %0d", a^b);
+    $display("Bitwise NOT of a = %0d", ~a);
+    $display("Bitwise NOT of b = %0d", ~b);
+  end
+endmodule
