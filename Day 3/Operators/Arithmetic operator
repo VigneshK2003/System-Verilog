@@ -1,0 +1,24 @@
+module arithmetic_operator;
+  int a;
+  int b;
+  int result;
+  
+  initial begin
+    
+    a = 10;
+    b = 5;
+    
+    $display("\n------Arithmetic operators------");
+    result = a + b;
+    $display(" Addition of given two bits = %0d", result);
+    result = a - b;
+    $display(" Subtraction of given two bits = %0d", result);
+    result = a*b;
+    $display(" Product of given two bits = %0d", result);
+    result = a/b;
+    $display(" Division of given two bits = %0d", result);
+    result = a % b;
+    $display(" Modulus of given two bits = %0d", result);
+    $display("-------------------------------");
+  end
+endmodule
