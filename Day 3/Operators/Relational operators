@@ -1,0 +1,16 @@
+module relational_operator;
+  int a = 20;
+  int b = 10;
+  
+  initial begin
+    
+    $display("\n------Relational Operators------");
+    $display("a == b : %0d", a == b);
+    $display("a != b : %0d", a != b);
+    $display("a > b : %0d", a > b);
+    $display("a < b : %0d", a < b);
+    $display("a >= b : %0d", a >= b);
+    $display("a <= b : %0d", a <= b);
+    $display("------------------------------");
+  end
+endmodule
