@@ -1,0 +1,18 @@
+module reverse_string;
+	int len;
+  string str;
+  string rev = "";
+
+  initial begin
+    str = "System Verilog";
+    len=str.len();
+
+    for(int i = len-1; i >= 0; i--) begin
+      rev = {rev, str[i]};
+    end
+
+    $display("Original String = %0s", str);
+    $display("Reversed String = %0s", rev);
+  end
+
+endmodule
