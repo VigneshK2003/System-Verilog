@@ -1,0 +1,19 @@
+module palindrome;
+    int i;
+    int len;
+    string s1 = "racecar";
+    string s2 = "";
+  initial begin
+
+    len = s1.len();
+    for(i = s1.len()-1;i >= 0; i--)
+      s2 = {s2,s1[i]};
+    
+    $display("\nstring s1 = %0s", s1);
+    $display("(s2) reverse of string s1 = %0s", s2);
+    if(s1 == s2)
+      $display("Word racecar is a Palindrome");
+    else
+      $display("Word racecar is not a Palindrome");
+  end 
+endmodule
