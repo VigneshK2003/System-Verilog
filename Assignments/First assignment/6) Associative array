@@ -1,0 +1,23 @@
+module asso_array;
+  
+  int arr[string];
+  string index;
+  int q1,q2,q3,q4;
+  
+  initial begin
+    
+    arr = '{"A":10, "B":20, "C":30};
+
+    q1 = arr.first(index);
+    if(q1)
+      $display("first key = %0s, value = %0d",index,arr[index]);
+    q2 = arr.next(index);
+    $display("next key = %0s, value = %0d",index,arr[index]);
+    q3 = arr.last(index);
+    if(q3)
+      $display("last key = %0s, value = %0d",index,arr[index]);
+    q4 = arr.prev(index);
+      $display("prev key = %0s, value = %0d",index,arr[index]);
+   
+  end
+endmodule
