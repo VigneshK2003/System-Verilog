@@ -1,0 +1,14 @@
+module string_int;
+  
+  string a;
+  int b;
+  int sum;
+  
+  initial begin
+    a = "12345";
+    b = a.atoi();
+    $display(" Integer of given string = %0d", b);
+    sum = b + 100;
+    $display(" Sum of given integer = %0d", sum);
+  end
+endmodule
