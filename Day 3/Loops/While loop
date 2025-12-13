@@ -1,0 +1,20 @@
+module while_loop;
+  logic clk;
+  int count;
+  
+  initial begin
+    clk = 0;
+    forever #5 clk = ~clk;
+  end
+  
+  initial begin
+     count = 1;
+    
+    while(count <=7)begin
+      @(posedge clk)
+      $display("Count = %0d", count);
+       count++;
+      end
+   #10 $finish;
+    end
+endmodule
