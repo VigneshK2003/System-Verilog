@@ -1,14 +1,16 @@
 module repeat_loop;
   
   integer count;
+  integer count_even;
   
   initial begin
- 
-    
       count = 0;
+      count_even = 0;
+
     repeat(5) begin
-      #5 count++;
-   $display(" count = %0d", count);
+       count++;
+       count_even = count_even + 2; 
+      $display(" count = %0d, count_even = %0d", count,count_even);
    end
   end
 endmodule
