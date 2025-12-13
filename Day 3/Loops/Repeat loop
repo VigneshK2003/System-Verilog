@@ -1,0 +1,14 @@
+module repeat_loop;
+  
+  integer count;
+  
+  initial begin
+ 
+    
+      count = 0;
+    repeat(5) begin
+      #5 count++;
+   $display(" count = %0d", count);
+   end
+  end
+endmodule
