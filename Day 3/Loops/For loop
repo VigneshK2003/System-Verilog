@@ -1,0 +1,11 @@
+module for_loop;
+  int arr[5];
+   int i;
+  initial begin
+     
+    for(i=0;i<5;i=i+1) begin
+      arr[i] = i*2;
+       $display("arr[%0d] = %0d",i,arr[i]);
+    end
+  end
+endmodule
