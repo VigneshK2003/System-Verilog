@@ -1,0 +1,12 @@
+
+module foreach_loop;
+  
+  int arr[5];
+  
+  initial begin
+    arr = '{2,4,6,8,10};
+    
+    foreach(arr[i])
+      $display("arr[%0d] = %0d",i,arr[i]);
+  end
+endmodule
