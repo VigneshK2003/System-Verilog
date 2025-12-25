@@ -1,7 +1,9 @@
 module functions;
     reg [7:0]x,y;
     integer out;
-  function integer add(input int a, input int b);
+
+  // in systemverilog function must declare the type of data it will return
+    function integer add(input int a, input int b);  
     add = a + b;
   endfunction
   
