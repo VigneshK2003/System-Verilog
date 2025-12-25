@@ -6,8 +6,8 @@ class person;
   string name;
   int age;
   
-  function new(string name, int age);
-    this.name = name;
+  function new(string name, int age);          
+    this.name = name;                      // this keyword is used here to represent class property & to distinguish from method argument
     this.age = age;
   endfunction
   
