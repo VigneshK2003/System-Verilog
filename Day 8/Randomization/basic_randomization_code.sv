@@ -2,8 +2,8 @@
 
 class random_ex;
   
-  rand bit [2:0]a;         // rand keyword used here randomizes possible values for given variable
-  rand bit [2:0]b;
+  rand bit [2:0]a;         // rand keyword 
+  rand bit [2:0]b;         // rand keyword used here randomizes possible values for given variable
   
 endclass
 
@@ -19,5 +19,5 @@ module random_example;
       r.randomize();
       $display(" a = %0d, b = %0d", r.a,r.b);
     end
-    end
+  end
 endmodule
