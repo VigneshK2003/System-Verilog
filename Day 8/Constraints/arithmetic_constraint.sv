@@ -7,7 +7,7 @@ class arithmetic_constraint;
    rand bit [7:0]d;
    
   constraint ctr {a inside {[10:20]};
-                   b == a*2;
+                   b == a*2;                             // arithmetic operators used inside constraints
                    c == a+b;
                    d == c/2;
                  };
