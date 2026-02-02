@@ -3,13 +3,11 @@
 class sequence_n;
   rand int unsigned num[5];
 
-   constraint ctr {
-        foreach(num[i])
-       if (i % 2 != 0)
-         num[i]%2 == 0;
-          else
-            num[i]%2 == 1; };
-  
+   constraint ctr {foreach(num[i])
+                     if(i%2 != 0)
+                        num[i]%2 == 0;
+                     else
+                        num[i]%2 == 1; };
   constraint ctr_1 {foreach(num[i]) 
                     num[i] inside {[20:100]}; };
 endclass
