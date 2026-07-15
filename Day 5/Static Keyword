@@ -26,4 +26,10 @@ module practice;
       p1.display();                        
   end
 endmodule
+
+
+// Output 
+
+ number = 20, name = waran
+ number = 20, name = vignesh
   
