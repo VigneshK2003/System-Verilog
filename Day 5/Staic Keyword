@@ -1,0 +1,29 @@
+
+class packet;
+     static int num;                           // Static Keyword
+     string name;
+  
+  function void display();
+    $display(" number = %0d, name = %s", num,name);
+  endfunction
+
+endclass
+
+module practice;
+  
+  initial begin
+    
+  packet p1,p2;
+    
+      p1 = new();
+      p1.num = 10;
+      p1.name = "vignesh";
+  
+      p2 = new();
+      p2.num = 20;
+      p2.name = "waran";                    // as keyword Static is used. both handle p1 and p2 share same memory for data member num
+      p2.display();
+      p1.display();                        
+  end
+endmodule
+  
